@@ -1,26 +1,25 @@
-# Dependencies
+# Dependências
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
-# Production build
+# Arquivos de build
 dist/
 build/
 
-# Environment variables
+# Variáveis de ambiente
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.production
 
 # Logs
-logs/
+logs
 *.log
 
 # Runtime data
-pids/
+pids
 *.pid
 *.seed
 *.pid.lock
@@ -30,16 +29,20 @@ coverage/
 *.lcov
 
 # nyc test coverage
-.nyc_output/
+.nyc_output
 
-# ESLint cache
-.eslintcache
+# Dependency directories
+node_modules/
+jspm_packages/
 
 # TypeScript cache
 *.tsbuildinfo
 
 # Optional npm cache directory
 .npm
+
+# Optional eslint cache
+.eslintcache
 
 # Optional REPL history
 .node_repl_history
@@ -50,16 +53,11 @@ coverage/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variable files
+# dotenv environment variables file
 .env
-.env.development
 .env.test
-.env.production
 
-# Docker
-.dockerignore
-
-# IDE
+# IDE/Editor files
 .vscode/
 .idea/
 *.swp
@@ -74,7 +72,3 @@ coverage/
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Temporary folders
-tmp/
-temp/
